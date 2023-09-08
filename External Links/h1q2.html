@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>H1.Q2</title>
+	</head>
+	<body>
+		<P>按F12查看第一次作业题目二答案</P>
+		<script>
+			const initialAmount = 1000; // 初始金额
+			const targetAmount = 5000; // 目标金额
+			const annualInterestRate = 0.05; // 年利率
+			
+			let years = 0;
+			let currentAmount = initialAmount;
+			
+			while (currentAmount < targetAmount) {
+			  currentAmount += currentAmount * annualInterestRate;
+			  years++;
+			}
+			
+			console.log("从 " + initialAmount + " 块增长到 " + targetAmount + " 块需要 " + years + " 年。");
+		</script>
+	</body>
+</html>
