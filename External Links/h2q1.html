@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>H2.Q1</title>
+		<style type="text/css">
+			body {
+				width: 915px;
+				margin: 0px auto;
+			}
+
+			#show {
+				font-size: 24px;
+				height: 30px;
+				color: #F00;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img src="../images/h2q1/top.png" alt="">
+		</div>
+		<div id="show"></div>
+		<script type="text/javascript">
+			// 获取今天的日期
+			var today = new Date();
+			
+			// 设置元旦的日期（注意：月份是从0开始计数的，所以0表示1月）
+			var newYear = new Date(today.getFullYear()+1, 0, 1);
+			
+			// 计算剩余天数
+			var daysUntilNewYear = Math.floor((newYear - today) / (1000 * 60 * 60 * 24));
+			
+			// 将结果显示在页面上
+			var showDiv = document.getElementById("show");
+			showDiv.innerHTML = "今天离元旦节还有 " + daysUntilNewYear + " 天";
+		</script>
+		<P>按F12查看第二次作业题目一答案</P>
+	</body>
+</html>
